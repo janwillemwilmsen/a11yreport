@@ -1,0 +1,41 @@
+{
+    "name": "a11yreport",
+    "version": "1.0.0",
+    "description": "\"# a11yreport\"",
+    "type": "module",
+    "source": "src/index.html",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "parcel",
+        "build": "parcel build",
+        "cats": "run-s energy",
+        "energy": "node getdata energy",
+        "two": "node getdata two",
+        "vattenfall": "node getdata energy vattenfall"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/janwillemwilmsen/a11yreport.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/janwillemwilmsen/a11yreport/issues"
+    },
+    "homepage": "https://github.com/janwillemwilmsen/a11yreport#readme",
+    "devDependencies": {
+        "@playwright/test": "^1.26.0",
+        "autoprefixer": "^10.4.12",
+        "axe-html-reporter": "^2.2.3",
+        "parcel": "^2.7.0",
+        "postcss": "^8.4.16",
+        "posthtml-doctype": "^1.1.1",
+        "posthtml-include": "^1.7.4",
+        "tailwindcss": "^3.1.8"
+    },
+    "dependencies": {
+        "npm-run-all": "^4.1.5",
+        "playwright": "^1.26.0",
+        "sanitize-html": "^2.7.2"
+    }
+}

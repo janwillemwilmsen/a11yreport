@@ -1,0 +1,35 @@
+[
+    { "site": "https://www.essent.nl/", "name": "Essent.nl", "cat": "two" },
+    { "site": "https://www.essent.nl/klantenservice/", "name": "Essent.nl/klantenservice", "cat": "two", "url": "essent" },
+    { "site": "https://www.essent.nl/energie", "name": "Essent.nl/energie", "cat": "", "url": "essent" },
+
+    { "site": "https://www.energiedirect.nl/", "name": "energiedirect.nl", "cat": "energy" },
+    { "site": "https://www.vandebron.nl/", "name": "Vandebron.nl", "cat": "energy" },
+    { "site": "https://www.vattenfall.nl/", "name": "Vattenfall.nl", "cat": "energy" },
+    { "site": "https://www.vattenfall.nl/klantenservice/meterstanden/", "name": "Vattenfall.nl/meterstanden", "cat": "", "url": "vattenfall" },
+
+    { "site": "https://www.eneco.nl/", "name": "Eneco.nl", "cat": "energy" },
+    { "site": "https://www.oxxio.nl/", "name": "Oxxio.nl", "cat": "energy" },
+    { "site": "https://www.greenchoice.nl/", "name": "Greenchoice.nl", "cat": "energy" },
+    { "site": "https://www.nle.nl/", "name": "Nle.nl", "cat": "energy" },
+    { "site": "https://www.budgetthuis.nl/energie/", "name": "Budgetthuis.nl/energie", "cat": "energy" },
+    { "site": "https://www.deltaenergie.nl/", "name": "Deltaenergie.nl", "cat": "energy" },
+    { "site": "https://www.frankenergie.nl/", "name": "Frankenergie.nl", "cat": "energy" },
+    { "site": "https://www.engie.nl/", "name": "Engie.nl", "cat": "energy" },
+    { "site": "https://pure-energie.nl/", "name": "Pure-energy.nl", "cat": "energy" },
+    { "site": "https://www.shellenergy.nl/", "name": "ShellEnergy.nl", "cat": "energy" },
+    { "site": "https://www.gaslicht.com/", "name": "GasLicht.com", "cat": "energy" },
+    { "site": "https://www.coolblue.nl/energie", "name": "Coolblue.nl/energie", "cat": "energy" },
+
+    { "site": "https://www.nederlandisoleert.nl/", "name": "Nederlandisoleert.nl" },
+    { "site": "https://www.klimaatroute.nl/", "name": "Klimaatroute.nl" },
+    { "site": "https://www.isoprofs.nl/", "name": "Isoprofs.nl" },
+    { "site": "https://www.zon7.nl/", "name": "Zon7.nl" },
+    { "site": "https://www.energiewacht.nl/", "name": "Energiewacht.nl" },
+    { "site": "https://www.energiewachtwest.nl/", "name": "EnergiewachtWest.nl" },
+    { "site": "https://www.kemkens.nl/", "name": "Kemkens.nl" },
+    { "site": "https://www.voltalimburg.nl/", "name": "VoltaLimburg.nl" },
+    { "site": "https://www.voltasolar.nl/", "name": "VoltaSolar.nl" },
+    { "site": "https://www.energiewonen.nl/", "name": "Energiewonen.nl" },
+    { "site": "https://www.cvtotaal.nl/", "name": "CV-totaal.nl" }
+]
