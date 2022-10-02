@@ -45,14 +45,28 @@
     </div>
 
 
-    <article class="container px-4 py-4 mx-auto">
-        <h2 class=" font-semibold text-xl py-4">Bekijk websites in de categorie:</h2>
+    <article class="container px-4 pt-4 mx-auto">
+        <h2 class=" font-semibold text-xl py-4">Resultaten (technische) accessibility scans van websites in Nederland</h2>
+        <p class="pt-0 pb-4">Technische/html issues zijn een indicator van de toegangkelijkheid van een website, maar vertellen niet het gehele verhaal.
+            <br><br>
+            <span class=" font-semibold">Kies een categorie:</span>
+        </p>
 
-        <details open class=" bg-gray-500 border border-gray-400 shadow-sm p-4 rounded-md my-2">
+
+        <!-- <details open class=" bg-gray-500 border border-gray-400 shadow-sm p-4 rounded-md my-2">
             <summary class=" text-2xl text-indigo-50">Verzekering</summary>
             <include src="partials/verzekering.html"></include>
+        </details> -->
+
+        <details class=" bg-gray-500 border border-gray-400 shadow-sm p-4 rounded-md my-2">
+            <summary class=" text-2xl text-indigo-50">Banken</summary>
+            <include src="partials/banken.html"></include>
         </details>
 
+        <details class=" bg-gray-500 border border-gray-400 shadow-sm p-4 rounded-md my-2">
+            <summary class=" text-2xl text-indigo-50">Telecom</summary>
+            <include src="partials/telecom.html"></include>
+        </details>
 
         <details class=" bg-gray-500 border border-gray-400 shadow-sm p-4 rounded-md my-2">
             <summary class=" text-2xl text-indigo-50">Energie <span class=" text-xl opacity-90">...met oa. 
@@ -60,10 +74,20 @@
             <include src="partials/energie.html"></include>
         </details>
 
+        <details class=" bg-[#e60167] border border-gray-400 shadow-sm p-4 rounded-md my-2">
+            <summary class=" text-2xl text-indigo-50">Essent - pagina urls </summary>
+            <include src="partials/essent.html"></include>
+        </details>
+
         <details class=" bg-gray-500 border border-gray-400 shadow-sm p-4 rounded-md my-2">
+            <summary class=" text-2xl text-indigo-50">Supermarkt</summary>
+            <include src="partials/supermarkt.html"></include>
+        </details>
+
+        <!-- <details class=" bg-gray-500 border border-gray-400 shadow-sm p-4 rounded-md my-2">
             <summary class=" text-2xl text-indigo-50">Two <span class=" text-xl opacity-90">...test test en test....</span></summary>
             <include src="partials/two.html"></include>
-        </details>
+        </details> -->
 
 
 
@@ -74,7 +98,7 @@
 
 
     <!-- NIEUWSBRIEF MODULE -->
-    <div style="text-align: center" class="sender-form-field" data-sender-form-id="l8q473jkepvymbrdwu4"></div>
+    <div style="text-align: center" class="sender-form-field my-10" data-sender-form-id="l8q473jkepvymbrdwu4"></div>
 
     <script>
         (function(s, e, n, d, er) {

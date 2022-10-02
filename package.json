@@ -8,10 +8,13 @@
         "test": "echo \"Error: no test specified\" && exit 1",
         "start": "parcel",
         "build": "parcel build",
-        "cats": "run-s energy",
-        "energy": "node getdata energy",
+        "cats": "run-s energie banken telecom supermarkt",
+        "energie": "node getdata energie",
+        "supermarkt": "node getdata supermarkt",
+        "banken": "node getdata banken",
+        "telecom": "node getdata telecom",
         "two": "node getdata two",
-        "vattenfall": "node getdata energy vattenfall"
+        "essent": "node getdata energy essent"
     },
     "repository": {
         "type": "git",

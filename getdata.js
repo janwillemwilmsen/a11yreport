@@ -166,7 +166,8 @@ const siteLoop = async() => {
 
         const page = await context.newPage();
 
-        const BLOCKED_TYPES = ['image', 'font', 'other'];
+        const BLOCKED_TYPES = ['font', 'other'];
+        // const BLOCKED_TYPES = ['image', 'font', 'other'];
         // const BLOCKED_TYPES = ['image', 'stylesheet', 'script', 'font', 'other'];
         await page.route('**/*', (route) => {
             BLOCKED_TYPES.includes(route.request().resourceType()) ?

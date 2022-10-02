@@ -1,4 +1,4 @@
-<div id='myDivTwoEnergie' class=" rounded-sm mt-2 block h-[480] w-full aspect-[4/3] md:aspect-[4/1]"></div>
+<div id='myDivTwoEssent' class=" rounded-sm mt-2 block h-[480] w-full aspect-[4/3] md:aspect-[4/1]"></div>
 <script>
     var xData = [
         '2022-10', '2022-11', '2022-12', '2023-01', '2023-02', '2023-03', '2023-04', '2023-05', '2023-06', '2023-07', '2023-08', '2023-09'
@@ -8,114 +8,118 @@
         x: xData,
         y: ['72', '', '', '', '', '', '', '', '', '', '', ''],
         mode: 'lines+markers',
-        name: 'Essent.nl	',
+        name: 'Essent Homepage	',
         visible: true
     };
 
     var trace2 = {
         x: xData,
-        y: ['79', '', '', '', '', '', '', '', '', '', '', ''],
+        y: ['89', '', '', '', '', '', '', '', '', '', '', ''],
         mode: 'lines+markers',
-        name: 'energiedirect.nl	',
+        name: 'Essent klantworden	',
         visible: true
     };
 
     var trace3 = {
         x: xData,
-        y: ['49', '', '', '', '', '', '', '', '', '', '', ''],
+        y: ['73', '', '', '', '', '', '', '', '', '', '', ''],
         mode: 'lines+markers',
-        name: 'Vandebron.nl	',
+        name: 'Essent energie besparen	',
         visible: true
     };
 
     var trace4 = {
         x: xData,
-        y: ['3', '', '', '', '', '', '', '', '', '', '', ''],
+        y: ['60', '', '', '', '', '', '', '', '', '', '', ''],
         mode: 'lines+markers',
-        name: 'Vattenfall.nl	',
+        name: 'Essent Speciaal voor klanten	',
         visible: true
     }
     var trace5 = {
         x: xData,
-        y: ['10', '', '', '', '', '', '', '', '', '', '', ''],
+        y: ['68', '', '', '', '', '', '', '', '', '', '', ''],
         mode: 'lines+markers',
-        name: 'Eneco.nl	',
+        name: 'Essent klantenservice	',
         visible: true
     }
     var trace6 = {
         x: xData,
-        y: ['23', '', '', '', '', '', '', '', '', '', '', ''],
+        y: ['6', '', '', '', '', '', '', '', '', '', '', ''],
         mode: 'lines+markers',
-        name: 'Oxxio.nl	',
+        name: 'Mijn.Essent	',
         visible: true
     }
 
     var trace7 = {
         x: xData,
-        y: ['52', '', '', '', '', '', '', '', '', '', '', ''],
+        y: ['53', '', '', '', '', '', '', '', '', '', '', ''],
         mode: 'lines+markers',
-        name: 'Greenchoice.nl	',
+        name: 'Essent Zakelijk Homepage	',
         visible: true
     }
 
     var trace8 = {
         x: xData,
-        y: ['53', '', '', '', '', '', '', '', '', '', '', ''],
+        y: ['58', '', '', '', '', '', '', '', '', '', '', ''],
         mode: 'lines+markers',
-        name: 'Nle.nl	',
+        name: 'Essent Zakelijk klantworden	',
         visible: true
     }
 
     var trace9 = {
         x: xData,
-        y: ['64', '', '', '', '', '', '', '', '', '', '', ''],
+        y: ['72', '', '', '', '', '', '', '', '', '', '', ''],
         mode: 'lines+markers',
-        name: 'Budgetthuis.nl/energie	',
+        name: 'Essent zonnepanelen	',
         visible: true
     }
 
     var trace10 = {
         x: xData,
-        y: ['39', '', '', '', '', '', '', '', '', '', '', ''],
+        y: ['65', '', '', '', '', '', '', '', '', '', '', ''],
         mode: 'lines+markers',
-        name: 'Deltaenergie.nl	',
+        name: 'Essent isolatie	',
         visible: true
     }
 
     var trace11 = {
         x: xData,
-        y: ['31', '', '', '', '', '', '', '', '', '', '', ''],
+        y: ['100', '', '', '', '', '', '', '', '', '', '', ''],
         mode: 'lines+markers',
-        name: 'Frankenergie.nl	',
+        name: 'Essent stijgende energieprijzen	',
         visible: true
     }
     var trace12 = {
         x: xData,
-        y: ['52', '', '', '', '', '', '', '', '', '', '', ''],
+        y: ['74', '', '', '', '', '', '', '', '', '', '', ''],
         mode: 'lines+markers',
-        name: 'Engie.nl	',
+        name: 'Essent contract wijzigen	',
         visible: true,
     }
+
+
+
+
     var trace13 = {
         x: xData,
-        y: ['21', '', '', '', '', '', '', '', '', '', '', ''],
+        y: ['', '', '', '', '', '', '', '', '', '', '', ''],
         mode: 'lines+markers',
-        name: 'Pure-energy.nl	',
-        visible: true,
+        name: '',
+        visible: false,
     }
     var trace14 = {
         x: xData,
-        y: ['13', '', '', '', '', '', '', '', '', '', '', ''],
+        y: ['', '', '', '', '', '', '', '', '', '', '', ''],
         mode: 'lines+markers',
-        name: 'ShellEnergy.nl	',
-        visible: true,
+        name: '',
+        visible: false,
     }
     var trace15 = {
         x: xData,
-        y: ['68', '', '', '', '', '', '', '', '', '', '', ''],
+        y: ['', '', '', '', '', '', '', '', '', '', '', ''],
         mode: 'lines+markers',
-        name: 'Coolblue.nl/energie	',
-        visible: true,
+        name: '',
+        visible: false,
     }
     var trace16 = {
         x: xData,
@@ -186,13 +190,18 @@
 
     };
 
-    Plotly.newPlot('myDivTwoEnergie', data, layout, {
+    Plotly.newPlot('myDivTwoEssent', data, layout, {
         modeBarButtonsToRemove: ['zoom2d', 'pan2d', 'select2d', 'lasso2d', 'zoomIn2d', 'zoomOut2d', 'autoScale2d', 'resetScale2d'],
         displaylogo: false,
         responsive: true
     });
 </script>
 <!-- /////////////////////////////////////////////////////////////////////////////// -->
+
+<!-- /////////////////////////////////////////////////////////////////////////////// -->
+
+
+
 <!-- /////////////////////////////////////////////////////////////////////////////// -->
 
 <table class="table w-full text-sm text-left text-gray-500 dark:text-gray-400">
@@ -207,7 +216,7 @@
 
         <tr class="bg-white border-b">
             <td class="py-4 px-6">
-                Essent.nl
+                Essent Homepage
             </td>
             <td class="py-4 px-6">
                 72
@@ -217,67 +226,57 @@
 
         <tr class="bg-white border-b">
             <td class="py-4 px-6">
-                energiedirect.nl
+                Essent klantworden
             </td>
             <td class="py-4 px-6">
-                79
-            </td>
-        </tr>
-
-
-        <tr class="bg-white border-b">
-            <td class="py-4 px-6">
-                Vandebron.nl
-            </td>
-            <td class="py-4 px-6">
-                49
+                89
             </td>
         </tr>
 
 
         <tr class="bg-white border-b">
             <td class="py-4 px-6">
-                Vattenfall.nl
+                Essent energie besparen
             </td>
             <td class="py-4 px-6">
-                3
-            </td>
-        </tr>
-
-
-        <tr class="bg-white border-b">
-            <td class="py-4 px-6">
-                Eneco.nl
-            </td>
-            <td class="py-4 px-6">
-                10
+                73
             </td>
         </tr>
 
 
         <tr class="bg-white border-b">
             <td class="py-4 px-6">
-                Oxxio.nl
+                Essent Speciaal voor klanten
             </td>
             <td class="py-4 px-6">
-                23
-            </td>
-        </tr>
-
-
-        <tr class="bg-white border-b">
-            <td class="py-4 px-6">
-                Greenchoice.nl
-            </td>
-            <td class="py-4 px-6">
-                52
+                60
             </td>
         </tr>
 
 
         <tr class="bg-white border-b">
             <td class="py-4 px-6">
-                Nle.nl
+                Essent klantenservice
+            </td>
+            <td class="py-4 px-6">
+                68
+            </td>
+        </tr>
+
+
+        <tr class="bg-white border-b">
+            <td class="py-4 px-6">
+                Mijn.Essent
+            </td>
+            <td class="py-4 px-6">
+                6
+            </td>
+        </tr>
+
+
+        <tr class="bg-white border-b">
+            <td class="py-4 px-6">
+                Essent Zakelijk Homepage
             </td>
             <td class="py-4 px-6">
                 53
@@ -287,80 +286,50 @@
 
         <tr class="bg-white border-b">
             <td class="py-4 px-6">
-                Budgetthuis.nl/energie
+                Essent Zakelijk klantworden
             </td>
             <td class="py-4 px-6">
-                64
-            </td>
-        </tr>
-
-
-        <tr class="bg-white border-b">
-            <td class="py-4 px-6">
-                Deltaenergie.nl
-            </td>
-            <td class="py-4 px-6">
-                39
+                58
             </td>
         </tr>
 
 
         <tr class="bg-white border-b">
             <td class="py-4 px-6">
-                Frankenergie.nl
+                Essent zonnepanelen
             </td>
             <td class="py-4 px-6">
-                31
-            </td>
-        </tr>
-
-
-        <tr class="bg-white border-b">
-            <td class="py-4 px-6">
-                Engie.nl
-            </td>
-            <td class="py-4 px-6">
-                52
+                72
             </td>
         </tr>
 
 
         <tr class="bg-white border-b">
             <td class="py-4 px-6">
-                Pure-energy.nl
+                Essent isolatie
             </td>
             <td class="py-4 px-6">
-                21
-            </td>
-        </tr>
-
-
-        <tr class="bg-white border-b">
-            <td class="py-4 px-6">
-                ShellEnergy.nl
-            </td>
-            <td class="py-4 px-6">
-                13
+                65
             </td>
         </tr>
 
 
         <tr class="bg-white border-b">
             <td class="py-4 px-6">
-                GasLicht.com
+                Essent stijgende energieprijzen
             </td>
             <td class="py-4 px-6">
-                83
+                100
             </td>
         </tr>
 
 
         <tr class="bg-white border-b">
             <td class="py-4 px-6">
-                Coolblue.nl/energie
+                Essent contract wijzigen
             </td>
             <td class="py-4 px-6">
-                68
+                74
             </td>
         </tr>
 
@@ -369,6 +338,6 @@
     </tbody>
 </table>
 <div class="py-3 px-6  bg-gray-50">
-    <a href="./axe-reports/2022-oktober-energie.html" class="underline">Bekijk data van oktober</a>
+    <a href="./axe-reports/2022-oktober-essent.html" class="underline">Bekijk data van oktober</a>
 </div>
 <!-- /////////////////////////////////////////////////////////////////////////////// -->
