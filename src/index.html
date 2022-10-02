@@ -9,16 +9,19 @@
     <link rel="stylesheet" href="index.css" />
     <script type="module" src="app.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+    <script src="https://cdn.plot.ly/plotly-2.14.0.min.js"></script>
 </head>
 
-<body class="  bg-slate-600">
+<body class="  bg-gray-100">
     <div class="header-2">
 
-        <nav class="py-2 md:py-4 bg-gray-700">
+        <nav class="py-2 md:py-4 bg-gray-200">
             <div class="container px-4 mx-auto md:flex md:items-center">
 
                 <div class="flex justify-between items-center">
-                    <a href="#" class="font-bold text-xl text-indigo-100">AccessibilityGescanned</a>
+                    <a href="/" class="font-bold text-xl text-black">
+                        <img src="icon.svg" class=" w-6 inline" /> AccessibilityGescanned
+                    </a>
                     <button class="border border-solid border-gray-600 px-3 py-1 rounded text-gray-600 opacity-50 hover:opacity-75 md:hidden" id="navbar-toggle">
                         <svg viewBox="0 0 100 80" width="40" height="40">
                             <rect width="100" height="20"></rect>
@@ -43,22 +46,22 @@
 
 
     <article class="container px-4 py-4 mx-auto">
-        <h2>Bekijk websites in de categorie</h2>
+        <h2 class=" font-semibold text-xl py-4">Bekijk websites in de categorie:</h2>
 
-        <details open>
-            <summary class=" text-2xl text-indigo-100">Verzekering</summary>
+        <details open class=" bg-gray-500 border border-gray-400 shadow-sm p-4 rounded-md my-2">
+            <summary class=" text-2xl text-indigo-50">Verzekering</summary>
             <include src="partials/verzekering.html"></include>
         </details>
 
 
-        <details>
-            <summary class=" text-2xl text-indigo-100">Energie <span class=" text-xl opacity-90">...met oa. 
+        <details class=" bg-gray-500 border border-gray-400 shadow-sm p-4 rounded-md my-2">
+            <summary class=" text-2xl text-indigo-50">Energie <span class=" text-xl opacity-90">...met oa. 
               Essent, energiedirect.nl, Vandebron, Eneco, Vattenfall....</span></summary>
             <include src="partials/energie.html"></include>
         </details>
 
-        <details>
-            <summary class=" text-2xl text-indigo-100">Two <span class=" text-xl opacity-90">...test test en test....</span></summary>
+        <details class=" bg-gray-500 border border-gray-400 shadow-sm p-4 rounded-md my-2">
+            <summary class=" text-2xl text-indigo-50">Two <span class=" text-xl opacity-90">...test test en test....</span></summary>
             <include src="partials/two.html"></include>
         </details>
 
@@ -89,7 +92,10 @@
     </script>
 
 
+    <div class=" hidden">
+        <img src="./fakelogo.png">
 
+    </div>
 
 </body>
 

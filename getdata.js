@@ -56,12 +56,14 @@ if (filter !== undefined) {
         console.log('Bedrijf groter dan 0')
         var siteList = siteListJson.filter(x => x.cat !== filter && x.url === filterBedrijf)
         var filename = year + '-' + month + '-' + filterBedrijf
+        var partialfilename = filterBedrijf
         var seoMeta = filterBedrijf
 
     } else {
         console.log('alleen categorie')
         var siteList = siteListJson.filter(x => x.cat === filter)
         var filename = year + '-' + month + '-' + filter
+        var partialfilename = filter
         var seoMeta = filter
 
         console.log('config:', config)
@@ -76,6 +78,7 @@ if (filter !== undefined) {
     console.log('geen params')
     var siteList = siteListJson
     var filename = year + '-' + month + '-all'
+    var partialfilename = year + '-' + month + '-all'
     var seoMeta = ' veel websites '
 }
 
@@ -320,8 +323,14 @@ const siteLoop = async() => {
         // const scoring = `li.${slugDomain} > div > h5 span`
 
         //// inject html with list or table at bottom of page with summary of all violations....
-        const websiteScore = `     <tr>  <td><a href="#${slugDomain}">${siteName}</a>  </td>
-                                    <td><span id="score${slugDomain}"></span> </td> </tr>
+        const websiteScore = `     <tr class="bg-white border-b">  
+                                        <td class="py-4 px-6">
+                                            <a href="#${slugDomain}">${siteName}</a>  
+                                        </td class="py-4 px-6">
+                                        <td class="py-4 px-6">
+                                            <span id="score${slugDomain}"></span> 
+                                        </td>
+                                    </tr>
         
                                 <script>
                                  const sitescore${slugDomain} = document.getElementById('score${slugDomain}')
@@ -402,7 +411,7 @@ const siteLoop = async() => {
                         <div class="container-fluid">
                             <div class="row">
                                     <div class="col-3">
-                                    <div class="px-6 pt-4 h-12 font-semibold font-weight-bold">Axe/A11Y scans</div>
+                                    <div class="px-6 pt-4 h-12 font-semibold font-weight-bold"><a href="/">Axe/A11Y scans</a></div>
                                     <p class="px-6 text-[10px] mb-4 text-gray-500">gemaakt op ${myDate} met Axe-Core 4.4.3</p>
 
                                                     <ol style="height:80vh;overflow-y: scroll;" class=" p-6 my-2  text-dark sticky-top">
@@ -422,11 +431,11 @@ const siteLoop = async() => {
                                                 <a name="aggregate"></a>
                                                 <div id="ares">
 
-                                                <table class="table">
-                                                    <thead class="thead-dark">
+                                                <table class="table w-full text-sm text-left text-gray-500 dark:text-gray-400">
+                                                    <thead class="thead-dark text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
                                                         <tr>
-                                                        <th scope="col">Page URL</th>
-                                                        <th scope="col">Accessibility violations ${month}</th>
+                                                        <th scope="col" class="py-3 px-6">Page URL</th>
+                                                        <th scope="col" class="py-3 px-6">Accessibility violations ${month}</th>
                                                         
                                                         </tr>
                                                     </thead>
@@ -514,7 +523,9 @@ const siteLoop = async() => {
             allowedAttributes: {
                 'table': ['class'],
                 'thead': ['class'],
-                'th': ['scope']
+                'th': ['scope', 'class'],
+                'tr': ['class'],
+                'td': ['class'],
             },
             allowedIframeHostnames: ['www.youtube.com']
         });
@@ -523,15 +534,20 @@ const siteLoop = async() => {
         // await page.waitForTimeout(5000); // wait for 5 seconds
         await browser.close();
 
-        const linkToDataFile = `<a href="/axe-reports/${filename}.html">Bekijk data van deze maand</a>`
+        const linkToDataFile = `<div class="py-3 px-6  bg-gray-50">
+                                <a href="./axe-reports/${filename}.html" class="underline">Bekijk data van ${month}</a>
+                                </div>
+                                <!-- /////////////////////////////////////////////////////////////////////////////// -->
+                                `
 
-        const dataForPartial = clean + linkToDataFile
+        const spacer = `<!-- /////////////////////////////////////////////////////////////////////////////// -->`
+        const dataForPartial = spacer + clean + linkToDataFile
 
-        appendFile(`${partialsDir}/${filename}.html`, dataForPartial, function(err) {
+        appendFile(`${partialsDir}/${partialfilename}.html`, dataForPartial, function(err) {
             // writeFile(`${process.cwd()}/${outputDir}/index.html`, html, function(err) {
             if (err) throw err;
             console.log('Index file is created successfully. Open it with Live Server.');
-            console.log('File:', `${process.cwd()}/${partialsDir}/${filename}.html`)
+            console.log('File:', `${process.cwd()}/${partialsDir}/${partialfilename}.html`)
         });
 
     }

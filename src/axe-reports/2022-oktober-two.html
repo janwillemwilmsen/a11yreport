@@ -46,8 +46,8 @@
                         <div class="container-fluid">
                             <div class="row">
                                     <div class="col-3">
-                                    <div class="px-6 pt-4 h-12 font-semibold font-weight-bold">Axe/A11Y scans</div>
-                                    <p class="px-6 text-[10px] mb-4 text-gray-500">gemaakt op 2022-10-1 met Axe-Core 4.4.3</p>
+                                    <div class="px-6 pt-4 h-12 font-semibold font-weight-bold"><a href="/">Axe/A11Y scans</a></div>
+                                    <p class="px-6 text-[10px] mb-4 text-gray-500">gemaakt op 2022-10-2 met Axe-Core 4.4.3</p>
 
                                                     <ol style="height:80vh;overflow-y: scroll;" class=" p-6 my-2  text-dark sticky-top">
                                                         
@@ -5381,25 +5381,37 @@
                                                 <a name="aggregate"></a>
                                                 <div id="ares">
 
-                                                <table class="table">
-                                                    <thead class="thead-dark">
+                                                <table class="table w-full text-sm text-left text-gray-500 dark:text-gray-400">
+                                                    <thead class="thead-dark text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
                                                         <tr>
-                                                        <th scope="col">Page URL</th>
-                                                        <th scope="col">Accessibility violations oktober</th>
+                                                        <th scope="col" class="py-3 px-6">Page URL</th>
+                                                        <th scope="col" class="py-3 px-6">Accessibility violations oktober</th>
                                                         
                                                         </tr>
                                                     </thead>
                                                     <tbody>
     
-                                                         <tr>  <td><a href="#httpswwwessentnl">Essent.nl</a>  </td>
-                                    <td><span id="scorehttpswwwessentnl"></span> </td> </tr>
+                                                         <tr class="bg-white border-b">  
+                                        <td class="py-4 px-6">
+                                            <a href="#httpswwwessentnl">Essent.nl</a>  
+                                        </td class="py-4 px-6">
+                                        <td class="py-4 px-6">
+                                            <span id="scorehttpswwwessentnl"></span> 
+                                        </td>
+                                    </tr>
         
                                 <script>
                                  const sitescorehttpswwwessentnl = document.getElementById('scorehttpswwwessentnl')
                                  sitescorehttpswwwessentnl.innerText = document.querySelector('li.httpswwwessentnl > div > h5 span').innerText
                                 </script>
-                                 <tr>  <td><a href="#httpswwwessentnlklantenservice">Essent.nl/klantenservice</a>  </td>
-                                    <td><span id="scorehttpswwwessentnlklantenservice"></span> </td> </tr>
+                                 <tr class="bg-white border-b">  
+                                        <td class="py-4 px-6">
+                                            <a href="#httpswwwessentnlklantenservice">Essent.nl/klantenservice</a>  
+                                        </td class="py-4 px-6">
+                                        <td class="py-4 px-6">
+                                            <span id="scorehttpswwwessentnlklantenservice"></span> 
+                                        </td>
+                                    </tr>
         
                                 <script>
                                  const sitescorehttpswwwessentnlklantenservice = document.getElementById('scorehttpswwwessentnlklantenservice')
